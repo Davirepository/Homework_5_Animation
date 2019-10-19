@@ -40,6 +40,9 @@ class ViewController: UIViewController {
     }
 
     @objc func tapButton() {
+        view.isUserInteractionEnabled = false
+        view.layer.removeAllAnimations()
+        button.layer.removeAllAnimations()
         UIView.animate(withDuration: 6.0,
                        delay: 0.0,
                        options: [.curveLinear, .repeat],
