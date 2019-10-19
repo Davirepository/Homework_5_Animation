@@ -82,6 +82,7 @@ class ViewController: UIViewController {
         
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(12)) {
             self.buttonStop.isHidden = false
+            self.view.isUserInteractionEnabled = true
         }
         
     }
